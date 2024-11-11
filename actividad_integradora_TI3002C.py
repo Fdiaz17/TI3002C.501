@@ -1,10 +1,10 @@
 import pandas as pd
-#import plotly.express as px
+import plotly.express as px
 import streamlit as st
-#import numpy as np
-#from plotly.subplots import make_subplots
-#import plotly.graph_objects as go
-#import matplotlib.pyplot as plt
+import numpy as np
+from plotly.subplots import make_subplots
+import plotly.graph_objects as go
+import matplotlib.pyplot as plt
 
 st.set_page_config(layout="wide")
 with open('style.css') as f:
