@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 #import plotly as px
-import plotly.figure_factory as ff
+#import plotly.figure_factory as ff
 from bokeh.plotting import figure
 import matplotlib.pyplot as plt
 
