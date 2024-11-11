@@ -118,4 +118,11 @@ with barrasypastel:
     fig.update_layout(margin=dict(l=5,r=5,b=10,t=10))
     col2.markdown("<h4 style= 'text-align: center ;color: #F2F9FF;'>Incidents</h4>", unsafe_allow_html=True)
     col2.write(fig)
-st.sidebar.markdown('''Nombre, Matrícula")
+st.sidebar.markdown(st.sidebar.markdown('''
+---
+### Actividad Integradora 
+
+Trabajo de ***Nombre***
+
+Matrícula: ***A0XXXXXXX***
+''')
