@@ -27,32 +27,32 @@ df=df.dropna(axis=0,how='any')
 
 #----------------------------------------------
 #--- FILTROS ---
-st.sidebar.header("Filtering Options")
-Year = st.sidebar.selectbox("Year:",('2018','2019','2020'))
+#st.sidebar.header("Filtering Options")
+#Year = st.sidebar.selectbox("Year:",('2018','2019','2020'))
   
-Dist = st.sidebar.selectbox("District:",('Out of SF', 'Park', 'Bayview', 'Mission', 'Southern', 'Taraval',
-       'Northern', 'Central', 'Ingleside', 'Richmond', 'Tenderloin')
-)
+#Dist = st.sidebar.selectbox("District:",('Out of SF', 'Park', 'Bayview', 'Mission', 'Southern', 'Taraval',
+#       'Northern', 'Central', 'Ingleside', 'Richmond', 'Tenderloin')
+#)
 #----------------------------------------------
 #--- CONTENEDORES ---
-mapa_metricas= st.container()
-barrasypastel=st.container()
+#mapa_metricas= st.container()
+#barrasypastel=st.container()
 
 #----------------------------------------------
 
-with mapa_metricas:
-    col1,col2=st.columns(2)
-    df2=df[df['Incident Date'].dt.year==int(Year)]
-    df2=df2[df2['Police District']==Dist]
-    mapa=pd.DataFrame()
-    mapa['lat']=df2['Latitude']
-    mapa['lon']=df2['Longitude']
-    mapa=mapa.dropna()
-    col1.markdown("<h4 style= 'color: #F2F9FF;'>Crime Map</h4>", unsafe_allow_html=True)
-    col1.map(mapa)
+#with mapa_metricas:
+#    col1,col2=st.columns(2)
+#    df2=df[df['Incident Date'].dt.year==int(Year)]
+#    df2=df2[df2['Police District']==Dist]
+#    mapa=pd.DataFrame()
+#    mapa['lat']=df2['Latitude']
+#    mapa['lon']=df2['Longitude']
+#    mapa=mapa.dropna()
+#    col1.markdown("<h4 style= 'color: #F2F9FF;'>Crime Map</h4>", unsafe_allow_html=True)
+#    col1.map(mapa)
     #------------------------------
     #--- PIE CHART ---
-    result=df2['Resolution'].value_counts()
+'''result=df2['Resolution'].value_counts()
     pie_resul=pd.DataFrame()
     pie_resul['Resolution']=result.index
     r=[]
@@ -117,4 +117,4 @@ with barrasypastel:
         ))
     fig.update_layout(margin=dict(l=5,r=5,b=10,t=10))
     col2.markdown("<h4 style= 'text-align: center ;color: #F2F9FF;'>Incidents</h4>", unsafe_allow_html=True)
-    col2.write(fig)
+    col2.write(fig) '''
