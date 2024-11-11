@@ -24,7 +24,7 @@ df=df.drop(['Report Datetime', 'Row ID', 'Incident ID',
        'Parks Alliance CPSI (27+TL sites)', 'ESNCAG - Boundary File','Areas of Vulnerability, 2016'],axis=1)
 df['Incident Date'] = pd.to_datetime(df['Incident Date']).dt.normalize()
 df=df.dropna(axis=0,how='any') 
-
+df
 #----------------------------------------------
 #--- FILTROS ---
 #st.sidebar.header("Filtering Options")
